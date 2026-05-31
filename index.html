@@ -208,6 +208,11 @@
             margin: 1.8rem 0;
         }
 
+        .contact-buttons .btn {
+            width: 100%;
+            justify-content: center;
+        }
+
         .btn {
             display: flex;
             align-items: center;
@@ -239,6 +244,36 @@
             background: transparent;
             border: 1.5px solid #cbd5e1;
             color: #1e293b;
+        }
+
+        #calendar-schedule-placeholder {
+            display: block;
+            width: 100%;
+            height: 0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .contact-buttons > .qxCTlb {
+            width: 100% !important;
+            min-height: 3.5rem !important;
+            padding: 0.9rem 1.2rem !important;
+            border-radius: 60px !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            font-family: inherit !important;
+            font-weight: 600 !important;
+            font-size: 1rem !important;
+            line-height: 1.1 !important;
+            text-align: center !important;
+            margin: 0 !important;
+            box-shadow: none !important;
+            border: none !important;
+        }
+
+        .contact-buttons > .qxCTlb:hover {
+            opacity: 0.95;
         }
 
         .btn-outline:hover {
@@ -422,7 +457,11 @@
                     <a href="tel:+79614049153" class="btn btn-outline">
                         <i class="fas fa-phone-alt"></i> Позвонить по номеру
                     </a>
+                    <div id="calendar-schedule-placeholder"></div>
                 </div>
+
+                <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+                <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async defer onload="window.calendar&&window.calendar.schedulingButton&&window.calendar.schedulingButton.load({url:'https://calendar.google.com/calendar/appointments/schedules/AcZssZ2AswFjjDbUuBNYcoFjOkbC1hVx_jOfZf3iQLf5ZghPwuK0AQLAUi4r7POTu3UV3I1DMLACn3XU?gv=true',color:'#039BE5',label:'Записаться на пробное занятие',target:document.getElementById('calendar-schedule-placeholder')});"></script>
 
                 <div class="contact-info">
                     <div class="contact-item">
